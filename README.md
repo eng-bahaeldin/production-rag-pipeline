@@ -1,4 +1,4 @@
-### # Production Two-Stage RAG Pipeline with Query Rewriting, Cross-Encoder Re-Ranking & Adaptive Web Fallback
+# Production Two-Stage RAG Pipeline with Query Rewriting, Cross-Encoder Re-Ranking & Adaptive Web Fallback
 
 An enterprise-grade, resilient Retrieval-Augmented Generation (RAG) assistant engineered for cloud infrastructure operations (VPC provisioning, Terraform module governance, EKS worker node specifications, and FinOps billing policies).
 
