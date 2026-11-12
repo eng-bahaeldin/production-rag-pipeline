@@ -1,0 +1,28 @@
+[project]
+name = "production-rag-pipeline"
+version = "0.1.0"
+description = "Production Two-Stage RAG Pipeline with Query Rewriting, Cross-Encoder Re-Ranking, and Adaptive Web Fallback"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "chromadb>=0.5.0",
+    "ddgs>=7.0.0",
+    "numpy>=1.26.0",
+    "openai>=1.50.0",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.1",
+    "sentence-transformers>=3.1.0",
+    "streamlit>=1.39.0",
+    "tavily-python>=0.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
